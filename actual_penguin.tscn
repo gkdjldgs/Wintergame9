@@ -1,10 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://ciw52kvx5ymnm"]
+[gd_scene load_steps=2 format=3 uid="uid://ciw52kvx5ymnm"]
 
 [ext_resource type="Script" uid="uid://c04fdc7m3dhgr" path="res://penguin2d.gd" id="1_mchl7"]
-[ext_resource type="Texture2D" uid="uid://cx4yxpd77ahgw" path="res://icon.svg" id="2_bqd1k"]
 
 [node name="Penguin" type="CharacterBody2D"]
 script = ExtResource("1_mchl7")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_bqd1k")
