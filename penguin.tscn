@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxodj4jwwyjd1"]
+
+[ext_resource type="PackedScene" uid="uid://wca74f34nv0o" path="res://images/low_poly_penguin.glb" id="1_djwik"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7j1qa"]
+bounce = 0.1
+
+[node name="penguin" type="Node3D"]
+
+[node name="Ball" type="RigidBody3D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_7j1qa")
+linear_damp = 2.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ball"]
+
+[node name="CAR" type="Node3D" parent="."]
+
+[node name="Penguin model" parent="CAR" instance=ExtResource("1_djwik")]
+transform = Transform3D(0.094161175, -0.23158944, 0, 0.23158944, 0.094161175, 0, 0, 0, 0.25, 0.4330089, 0.12913322, -0.0009570718)
+
+[node name="Camera3D" type="Camera3D" parent="CAR"]
+transform = Transform3D(-4.0737422e-08, -0.36255193, 0.93196356, -1.5847647e-08, 0.9319636, 0.36255193, -1, 8.881785e-16, -4.371139e-08, 1.104553, 0.84644186, 0.00023841858)
