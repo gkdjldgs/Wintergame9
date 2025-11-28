@@ -95,7 +95,7 @@ script = ExtResource("1_mchl7")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(-18, -1)
-scale = Vector2(0.25, 0.25)
+scale = Vector2(0.16113745, 0.16113745)
 texture = ExtResource("2_y4x67")
 centered = false
 
@@ -106,4 +106,4 @@ libraries = {
 }
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(1.885, 1.885)
+zoom = Vector2(3.225, 3.225)

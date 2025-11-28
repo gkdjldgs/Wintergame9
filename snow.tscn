@@ -1,6 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://u22bg6m3sgeg"]
-
-[ext_resource type="PackedScene" uid="uid://ciw52kvx5ymnm" path="res://actual_penguin.tscn" id="1_nqr5d"]
+[gd_scene load_steps=4 format=3 uid="uid://u22bg6m3sgeg"]
 
 [sub_resource type="Gradient" id="Gradient_ov2c2"]
 colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
@@ -32,6 +30,3 @@ amount = 40
 lifetime = 20.0
 speed_scale = 1.35
 process_material = SubResource("ParticleProcessMaterial_ov2c2")
-
-[node name="Penguin" parent="." instance=ExtResource("1_nqr5d")]
-position = Vector2(597, 298)

@@ -1,8 +1,87 @@
-[gd_scene load_steps=3 format=3 uid="uid://coir2sg72qby0"]
+[gd_scene load_steps=6 format=3 uid="uid://coir2sg72qby0"]
 
 [ext_resource type="PackedScene" uid="uid://u22bg6m3sgeg" path="res://snow.tscn" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://bbaonq22hnj7b" path="res://images/wateranime-ezgif.com-gif-to-sprite-converter.png" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://ciw52kvx5ymnm" path="res://actual_penguin.tscn" id="3_h2yge"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
+texture = ExtResource("2_0xm2m")
+texture_region_size = Vector2i(178, 178)
+0:0/animation_speed = 10.0
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/animation_frame_3/duration = 1.0
+0:0/animation_frame_4/duration = 1.0
+0:0/animation_frame_5/duration = 1.0
+0:0/animation_frame_6/duration = 1.0
+0:0/animation_frame_7/duration = 1.0
+0:0/animation_frame_8/duration = 1.0
+0:0/animation_frame_9/duration = 1.0
+0:0/animation_frame_10/duration = 1.0
+0:0/animation_frame_11/duration = 1.0
+0:0/animation_frame_12/duration = 1.0
+0:0/animation_frame_13/duration = 1.0
+0:0/animation_frame_14/duration = 1.0
+0:0/animation_frame_15/duration = 1.0
+0:0/animation_frame_16/duration = 1.0
+0:0/animation_frame_17/duration = 1.0
+0:0/animation_frame_18/duration = 1.0
+0:0/animation_frame_19/duration = 1.0
+0:0/animation_frame_20/duration = 1.0
+0:0/animation_frame_21/duration = 1.0
+0:0/animation_frame_22/duration = 1.0
+0:0/animation_frame_23/duration = 1.0
+0:0/animation_frame_24/duration = 1.0
+0:0/animation_frame_25/duration = 1.0
+0:0/animation_frame_26/duration = 1.0
+0:0/animation_frame_27/duration = 1.0
+0:0/animation_frame_28/duration = 1.0
+0:0/animation_frame_29/duration = 1.0
+0:0/animation_frame_30/duration = 1.0
+0:0/animation_frame_31/duration = 1.0
+0:0/animation_frame_32/duration = 1.0
+0:0/animation_frame_33/duration = 1.0
+0:0/animation_frame_34/duration = 1.0
+0:0/animation_frame_35/duration = 1.0
+0:0/animation_frame_36/duration = 1.0
+0:0/animation_frame_37/duration = 1.0
+0:0/animation_frame_38/duration = 1.0
+0:0/animation_frame_39/duration = 1.0
+0:0/animation_frame_40/duration = 1.0
+0:0/animation_frame_41/duration = 1.0
+0:0/animation_frame_42/duration = 1.0
+0:0/animation_frame_43/duration = 1.0
+0:0/animation_frame_44/duration = 1.0
+0:0/animation_frame_45/duration = 1.0
+0:0/animation_frame_46/duration = 1.0
+0:0/animation_frame_47/duration = 1.0
+0:0/animation_frame_48/duration = 1.0
+0:0/animation_frame_49/duration = 1.0
+0:0/animation_frame_50/duration = 1.0
+0:0/animation_frame_51/duration = 1.0
+0:0/animation_frame_52/duration = 1.0
+0:0/animation_frame_53/duration = 1.0
+0:0/animation_frame_54/duration = 1.0
+0:0/animation_frame_55/duration = 1.0
+0:0/animation_frame_56/duration = 1.0
+0:0/animation_frame_57/duration = 1.0
+0:0/animation_frame_58/duration = 1.0
+0:0/animation_frame_59/duration = 1.0
+0:0/animation_frame_60/duration = 1.0
+0:0/animation_frame_61/duration = 1.0
+0:0/animation_frame_62/duration = 1.0
+0:0/animation_frame_63/duration = 1.0
+0:0/animation_frame_64/duration = 1.0
+0:0/animation_frame_65/duration = 1.0
+0:0/animation_frame_66/duration = 1.0
+0:0/animation_frame_67/duration = 1.0
+0:0/animation_frame_68/duration = 1.0
+0:0/animation_frame_69/duration = 1.0
+0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_ig7tw"]
+sources/0 = SubResource("TileSetAtlasSource_h2yge")
 
 [node name="Node2D" type="Node2D"]
 
@@ -10,5 +89,10 @@
 position = Vector2(581, -38)
 
 [node name="TileMap" type="TileMap" parent="."]
+z_index = -7
 tile_set = SubResource("TileSet_ig7tw")
 format = 2
+layer_0/tile_data = PackedInt32Array(2228290, 0, 0, 2228279, 0, 0, 2228268, 0, 0, 2228257, 0, 0, 2228246, 0, 0, 2228235, 0, 0, 2228224, 0, 0, 1507328, 0, 0, 1507339, 0, 0, 1507350, 0, 0, 1507361, 0, 0, 1507372, 0, 0, 1507383, 0, 0, 1507394, 0, 0, 786498, 0, 0, 786487, 0, 0, 786476, 0, 0, 786465, 0, 0, 786454, 0, 0, 786443, 0, 0, 786432, 0, 0, 65602, 0, 0, 65591, 0, 0, 65580, 0, 0, 65569, 0, 0, 65558, 0, 0, 65547, 0, 0, 65536, 0, 0)
+
+[node name="Penguin" parent="." instance=ExtResource("3_h2yge")]
+position = Vector2(511, 386)
