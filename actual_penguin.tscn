@@ -104,3 +104,6 @@ root_node = NodePath("../..")
 libraries = {
 &"": SubResource("AnimationLibrary_s7myu")
 }
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.885, 1.885)
