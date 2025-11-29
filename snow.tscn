@@ -25,8 +25,8 @@ collision_bounce = 0.0
 [node name="Snowgenerator" type="Node2D"]
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
-position = Vector2(585, -273)
-amount = 40
+position = Vector2(603, -53)
+amount = 80
 lifetime = 20.0
 speed_scale = 1.35
 process_material = SubResource("ParticleProcessMaterial_ov2c2")

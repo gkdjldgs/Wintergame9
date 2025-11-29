@@ -106,4 +106,4 @@ libraries = {
 }
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(3.225, 3.225)
+zoom = Vector2(2.775, 2.775)
