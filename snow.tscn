@@ -9,14 +9,15 @@ gradient = SubResource("Gradient_ov2c2")
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ov2c2"]
 particle_flag_disable_z = true
 emission_shape = 3
-emission_box_extents = Vector3(600, 50, 1)
-gravity = Vector3(0, 40, 0)
+emission_box_extents = Vector3(600, 350, 1)
+gravity = Vector3(12, 55, 0)
 radial_accel_min = -1.0000023
 radial_accel_max = -1.0000023
 damping_min = 5.0
 damping_max = 5.0
 scale_min = 2.0
 scale_max = 5.0
+color = Color(0.79607844, 0.79607844, 0.79607844, 0.827451)
 color_ramp = SubResource("GradientTexture1D_nqr5d")
 collision_mode = 1
 collision_friction = 1.0
@@ -26,7 +27,7 @@ collision_bounce = 0.0
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 position = Vector2(603, -53)
-amount = 80
-lifetime = 20.0
+amount = 120
+lifetime = 15.0
 speed_scale = 1.35
 process_material = SubResource("ParticleProcessMaterial_ov2c2")

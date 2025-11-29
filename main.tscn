@@ -1,15 +1,16 @@
-[gd_scene load_steps=10 format=3 uid="uid://coir2sg72qby0"]
+[gd_scene load_steps=12 format=3 uid="uid://coir2sg72qby0"]
 
 [ext_resource type="PackedScene" uid="uid://u22bg6m3sgeg" path="res://snow.tscn" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://bbaonq22hnj7b" path="res://images/wateranime-ezgif.com-gif-to-sprite-converter.png" id="2_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://bb8f0wp6jwvkk" path="res://images/snowfloor.png" id="3_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://ciw52kvx5ymnm" path="res://actual_penguin.tscn" id="3_h2yge"]
 [ext_resource type="Texture2D" uid="uid://d4g6njwqu3jfr" path="res://images/bridge.png" id="5_lquwl"]
+[ext_resource type="Texture2D" uid="uid://djojkc3sjmxsl" path="res://images/igloo.png" id="6_7mycd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
 texture = ExtResource("2_0xm2m")
 texture_region_size = Vector2i(178, 178)
-0:0/animation_speed = 10.0
+0:0/animation_speed = 2.2
 0:0/animation_frame_0/duration = 1.0
 0:0/animation_frame_1/duration = 1.0
 0:0/animation_frame_2/duration = 1.0
@@ -92,35 +93,39 @@ sources/0 = SubResource("TileSetAtlasSource_h2yge")
 sources/1 = SubResource("TileSetAtlasSource_lquwl")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1bvp3"]
-radius = 14.035668
+radius = 5.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7mycd"]
+size = Vector2(237, 182)
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Snowgenerator" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(-77, 11)
+position = Vector2(5, 318)
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -6
 position = Vector2(94, 35)
 tile_set = SubResource("TileSet_ig7tw")
 format = 2
-layer_0/tile_data = PackedInt32Array(2228290, 0, 0, 2228279, 0, 0, 2228268, 0, 0, 2228257, 0, 0, 2228246, 0, 0, 2228235, 0, 0, 2228224, 0, 0, 1507328, 0, 0, 1507339, 0, 0, 1507350, 0, 0, 1507361, 0, 0, 1507372, 0, 0, 1507383, 0, 0, 1507394, 0, 0, 786498, 0, 0, 786487, 0, 0, 786476, 0, 0, 786465, 0, 0, 786454, 0, 0, 786443, 0, 0, 786432, 0, 0, 65602, 0, 0, 65591, 0, 0, 65580, 0, 0, 65569, 0, 0, 65558, 0, 0, 65547, 0, 0, 65536, 0, 0)
+layer_0/tile_data = PackedInt32Array(2228290, 0, 0, 2228279, 0, 0, 2228268, 0, 0, 2228257, 0, 0, 2228246, 0, 0, 2228235, 0, 0, 2228224, 0, 0, 1507328, 0, 0, 1507339, 0, 0, 1507350, 0, 0, 1507361, 0, 0, 1507372, 0, 0, 1507383, 0, 0, 1507394, 0, 0, 786498, 0, 0, 786487, 0, 0, 786476, 0, 0, 786465, 0, 0, 786454, 0, 0, 786443, 0, 0, 786432, 0, 0, 65602, 0, 0, 65591, 0, 0, 65580, 0, 0, 65569, 0, 0, 65558, 0, 0, 65547, 0, 0, 65536, 0, 0, 2949142, 0, 0, 2949153, 0, 0, 2949164, 0, 0, 2949175, 0, 0, 2949186, 0, 0, 3670038, 0, 0, 3670049, 0, 0, 3670060, 0, 0, 3670071, 0, 0, 3670082, 0, 0, -655338, 0, 0, -655327, 0, 0, -655316, 0, 0, -655315, 0, 0, -655304, 0, 0, -655293, 0, 0)
 
 [node name="Penguin" parent="." instance=ExtResource("3_h2yge")]
 z_index = 2
-position = Vector2(275, 119)
+position = Vector2(165, 310)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Penguin"]
-position = Vector2(-9, 33)
+position = Vector2(-9, 39)
 shape = SubResource("CircleShape2D_1bvp3")
 
 [node name="Snowfloor" type="Sprite2D" parent="."]
 z_index = -4
-position = Vector2(237.00003, 324.76193)
-scale = Vector2(3.4159358, 5.316986)
+position = Vector2(132.93384, 345.00003)
+scale = Vector2(4.969162, 8.149254)
 texture = ExtResource("3_1bvp3")
 
 [node name="RigidBody2D" type="StaticBody2D" parent="."]
+visible = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D"]
 position = Vector2(51, -1)
@@ -133,3 +138,14 @@ polygon = PackedVector2Array(465, 1, 462, 302, 730, 302, 731, 265, 841, 266, 842
 position = Vector2(620.00006, 337)
 scale = Vector2(0.175, 0.175)
 texture = ExtResource("5_lquwl")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(225, 106.99999)
+scale = Vector2(0.1510289, 0.1510289)
+texture = ExtResource("6_7mycd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(222, 108)
+shape = SubResource("RectangleShape2D_7mycd")
