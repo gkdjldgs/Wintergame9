@@ -59,9 +59,8 @@ color = Color(0.35496143, 0.59916914, 0.5731959, 1)
 [node name="playercube" type="ColorRect" parent="Control/Secondary"]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 8.0
 offset_top = 26.0
-offset_right = 22.0
+offset_right = 30.0
 offset_bottom = 40.0
 color = Color(0.08858397, 0.56941706, 0.9999997, 1)
 
@@ -77,6 +76,7 @@ show_percentage = false
 
 [node name="Sunfish" type="Sprite2D" parent="Control/Secondary"]
 unique_name_in_owner = true
+visible = false
 position = Vector2(14.98999, 44.5)
 scale = Vector2(0.023333423, 0.023333428)
 texture = ExtResource("1_fmrlq")

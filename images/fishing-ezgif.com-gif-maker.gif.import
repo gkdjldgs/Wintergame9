@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://b6avi0d4vr52y"
+path="res://.godot/imported/fishing-ezgif.com-gif-maker.gif-92d0d10ea282843199a1358a57ccd6ad.tres"
+
+[deps]
+
+source_file="res://images/fishing-ezgif.com-gif-maker.gif"
+dest_files=["res://.godot/imported/fishing-ezgif.com-gif-maker.gif-92d0d10ea282843199a1358a57ccd6ad.tres"]
+
+[params]
+
+frames_per_second=30

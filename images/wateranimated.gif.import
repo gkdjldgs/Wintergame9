@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://cdf5gobgs5syn"
+path="res://.godot/imported/wateranimated.gif-0423b142d85dd4e01b1ca2b8308cb797.tres"
+
+[deps]
+
+source_file="res://images/wateranimated.gif"
+dest_files=["res://.godot/imported/wateranimated.gif-0423b142d85dd4e01b1ca2b8308cb797.tres"]
+
+[params]
+
+frames_per_second=30

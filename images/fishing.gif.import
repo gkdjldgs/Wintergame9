@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://fl0cdp3hwho5"
+path="res://.godot/imported/fishing.gif-109b3af69063031cfedcb8b2c3d994f9.tres"
+
+[deps]
+
+source_file="res://images/fishing.gif"
+dest_files=["res://.godot/imported/fishing.gif-109b3af69063031cfedcb8b2c3d994f9.tres"]
+
+[params]
+
+frames_per_second=30

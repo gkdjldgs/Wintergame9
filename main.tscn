@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://coir2sg72qby0"]
+[gd_scene load_steps=17 format=3 uid="uid://coir2sg72qby0"]
 
 [ext_resource type="PackedScene" uid="uid://u22bg6m3sgeg" path="res://snow.tscn" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://bbaonq22hnj7b" path="res://images/wateranime-ezgif.com-gif-to-sprite-converter.png" id="2_0xm2m"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://djojkc3sjmxsl" path="res://images/igloo.png" id="6_7mycd"]
 [ext_resource type="Texture2D" uid="uid://b1i748fwet3xe" path="res://images/sdf.png" id="7_5vw27"]
 [ext_resource type="Texture2D" uid="uid://bgr8gsdirok3p" path="res://ice.png" id="8_kek77"]
+[ext_resource type="Script" uid="uid://b7l7w1wt377om" path="res://detectionzone.gd" id="9_kek77"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
 texture = ExtResource("2_0xm2m")
@@ -103,6 +104,9 @@ size = Vector2(465, 182)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_272bh"]
 size = Vector2(302, 92)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5vw27"]
+size = Vector2(33, 123.5)
+
 [node name="Node2D" type="Node2D"]
 
 [node name="Snowgenerator" parent="." instance=ExtResource("1_ig7tw")]
@@ -179,3 +183,12 @@ modulate = Color(1, 1, 1, 0.8862745)
 position = Vector2(870, -115)
 scale = Vector2(0.2326778, 0.08474406)
 texture = ExtResource("8_kek77")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("9_kek77")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(827.5, 324.25)
+shape = SubResource("RectangleShape2D_5vw27")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

@@ -10,3 +10,6 @@ class_name Fishtype
 @export_range(0.1, 2.0, 0.05) var bite_time_dif: float = 0.5
 
 @export_range(0.0, 1.0, 0.01) var difficulty: float = 0.45
+
+enum MOVEMENT{Smooth, Darty, Sink_Rise, Chaotic}
+@export var pattern: MOVEMENT = MOVEMENT.Smooth
