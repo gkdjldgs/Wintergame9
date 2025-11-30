@@ -24,6 +24,7 @@ collision_friction = 1.0
 collision_bounce = 0.0
 
 [node name="Snowgenerator" type="Node2D"]
+z_index = 4
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 position = Vector2(603, -53)
