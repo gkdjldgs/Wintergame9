@@ -1,6 +1,8 @@
 # Wintergame
 You are a penguin during winter.
 
+DEMO: https://youtu.be/QfAHdX7DTkU
+(very laggy)
 Theme
 
 This weeks theme was winter, the game's general setting is based off of winter and the player is a penguin.
