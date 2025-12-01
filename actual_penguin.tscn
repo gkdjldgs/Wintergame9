@@ -91,6 +91,7 @@ _data = {
 }
 
 [node name="Penguin" type="CharacterBody2D"]
+z_index = 2
 script = ExtResource("1_mchl7")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]

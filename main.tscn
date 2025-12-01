@@ -125,7 +125,6 @@ format = 2
 layer_0/tile_data = PackedInt32Array(2228290, 0, 0, 2228279, 0, 0, 2228268, 0, 0, 2228257, 0, 0, 2228246, 0, 0, 2228235, 0, 0, 2228224, 0, 0, 1507328, 0, 0, 1507339, 0, 0, 1507350, 0, 0, 1507361, 0, 0, 1507372, 0, 0, 1507383, 0, 0, 1507394, 0, 0, 786498, 0, 0, 786487, 0, 0, 786476, 0, 0, 786465, 0, 0, 786454, 0, 0, 786443, 0, 0, 786432, 0, 0, 65602, 0, 0, 65591, 0, 0, 65580, 0, 0, 65569, 0, 0, 65558, 0, 0, 65547, 0, 0, 65536, 0, 0, 2949142, 0, 0, 2949153, 0, 0, 2949164, 0, 0, 2949175, 0, 0, 2949186, 0, 0, 3670038, 0, 0, 3670049, 0, 0, 3670060, 0, 0, 3670071, 0, 0, 3670082, 0, 0, -655338, 0, 0, -655327, 0, 0, -655316, 0, 0, -655315, 0, 0, -655304, 0, 0, -655293, 0, 0)
 
 [node name="Penguin" parent="." instance=ExtResource("3_h2yge")]
-z_index = 2
 position = Vector2(165, 310)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Penguin"]
@@ -204,20 +203,18 @@ playback_type = 1
 stream = ExtResource("10_4c57u")
 volume_db = -1.54
 autoplay = true
-bus = &"Music"
 
 [node name="Winter139524" type="AudioStreamPlayer" parent="AudioStreamPlayer2D"]
 stream = ExtResource("10_ycdy4")
-bus = &"Music"
 
 [node name="WinterMorning299362" type="AudioStreamPlayer" parent="AudioStreamPlayer2D"]
 stream = ExtResource("12_w48qg")
-bus = &"Music"
 
 [node name="WinterNoWind127054" type="AudioStreamPlayer" parent="AudioStreamPlayer2D"]
 stream = ExtResource("13_vivmo")
-bus = &"Music"
 
-[node name="Sprite2D" parent="." instance=ExtResource("14_w48qg")]
+[node name="footstep" parent="." instance=ExtResource("14_w48qg")]
+z_index = 5
+position = Vector2(108, 377)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

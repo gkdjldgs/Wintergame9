@@ -4,10 +4,20 @@ extends CharacterBody2D
 var footsteps = preload('res://footsteps.tscn')
 var footstep = footsteps.instantiate()
 var foot = 'left'
+var location = Vector2(0,0)
 func feetsteps(direction):
 	add_child(footstep)
+	location = player.global_position
 	if direction == 'left':
-		pass
+		if foot == 'left':
+			location.y += 10
+			foot = 'right'
+		elif foot == 'right':
+			location.y -= 10
+			foot = 'right'
+	elif direction == 'right':
+		if foot == 'left':
+			location.y 
 var fishing = false
 func get_input():
 	var input_direction = Input.get_vector("left", "right", "forward", "back")
